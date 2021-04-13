@@ -41,6 +41,7 @@ Plug 'Yggdroot/indentLine'
 Plug 'avelino/vim-bootstrap-updater'
 Plug 'sheerun/vim-polyglot'
 Plug 'editorconfig/editorconfig-vim'
+Plug 'prettier/vim-prettier'
 
 if isdirectory('/usr/local/opt/fzf')
   Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim'
@@ -557,3 +558,6 @@ set cursorline
 let g:netrw_liststyle = 3
 let g:netrw_browse_split = 2
 let g:netrw_winsize = 10
+set noswapfile
+
+nnoremap <silent> <F10> :Prettier<CR>
